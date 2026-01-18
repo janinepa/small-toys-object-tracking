@@ -6,11 +6,7 @@ This project implements a multiple object tracking (MOT) system designed to trac
 
 The system pipeline performs detection and tracking on video footage. It was developed with a focus on comparing different tracking approaches and analyzing performance metrics.
 
-
-
 https://github.com/user-attachments/assets/d265ddbc-763f-42e5-9d95-06a14407661e
-
-
 
 ## Methodology
 
@@ -22,15 +18,15 @@ https://github.com/user-attachments/assets/d265ddbc-763f-42e5-9d95-06a14407661e
   - **mAP@50-95**: 0.483
 
 ### 2. Object Tracking
-Two tracking methods were explored and compared:
-**YOLOv8 + DeepSORT**: Integrates appearance information (using a Siamese network fine-tuned on a custom dataset of the toys) and motion information (Kalman filtering) for robust tracking.
+- **Model**: DeepSORT: Integrates appearance information (using a Siamese network) and motion information (Kalman filtering) for robust tracking.
+- **Training**: The Siamese network was fine-tuned on a custom cropped subset of the toys dataset.
+- **Performance Metrics**:
+  - **ACC**: 0.9997
 
 <img width="321" height="196" alt="yolo_deepsort_example" src="https://github.com/user-attachments/assets/5491af74-b768-4df7-a775-4db9794282b3" />
 
-## Experimental Results
-
-### Framerate Analysis
-We analyzed the impact of frame rate on tracking performance, testing ranges from 60 fps down to 10 fps (matching the training data characteristics). To evaluate the tracking, ID switches and unassigned objects per frames were counted and weighted equally. DeepSORT needs a high framerate of at least 30 fps to work.
+- **Framerate Analysis**:
+I analyzed the impact of frame rate on tracking performance, testing ranges from 60 fps down to 10 fps. To evaluate the tracking, ID switches and unassigned objects per frames were counted and weighted equally. DeepSORT needs a high framerate of at least 30 fps to work.
 
 <img width="300" height="200" alt="tracking_vs_fps" src="https://github.com/user-attachments/assets/0cc5af2f-1f88-46c1-944e-5effd88115c1" />
 
