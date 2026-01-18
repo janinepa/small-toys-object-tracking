@@ -6,7 +6,11 @@ This project implements a multiple object tracking (MOT) system designed to trac
 
 The system pipeline performs detection and tracking on video footage. It was developed with a focus on comparing different tracking approaches and analyzing performance metrics.
 
-TODO video
+
+
+https://github.com/user-attachments/assets/d265ddbc-763f-42e5-9d95-06a14407661e
+
+
 
 ## Methodology
 
