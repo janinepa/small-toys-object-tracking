@@ -25,6 +25,8 @@ https://github.com/user-attachments/assets/d265ddbc-763f-42e5-9d95-06a14407661e
 Two tracking methods were explored and compared:
 **YOLOv8 + DeepSORT**: Integrates appearance information (using a Siamese network fine-tuned on a custom dataset of the toys) and motion information (Kalman filtering) for robust tracking.
 
+<img width="321" height="196" alt="yolo_deepsort_example" src="https://github.com/user-attachments/assets/5491af74-b768-4df7-a775-4db9794282b3" />
+
 ## Experimental Results
 
 ### Framerate Analysis
