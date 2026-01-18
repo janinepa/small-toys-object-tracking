@@ -30,10 +30,11 @@ Two tracking methods were explored and compared:
 ## Experimental Results
 
 ### Framerate Analysis
-We analyzed the impact of frame rate on tracking performance, testing ranges from **60 fps** down to **10 fps** (matching the training data characteristics).
+We analyzed the impact of frame rate on tracking performance, testing ranges from 60 fps down to 10 fps (matching the training data characteristics). To evaluate the tracking, ID switches and unassigned objects per frames were counted and weighted equally. DeepSORT needs a high framerate of at least 30 fps to work.
 
-### Performance Evaluation
-TODO plot with framerate and number of id switches
+<img width="300" height="200" alt="tracking_vs_fps" src="https://github.com/user-attachments/assets/0cc5af2f-1f88-46c1-944e-5effd88115c1" />
+
+
 
 ## Project Structure
 - `src/YOLO/`: Scripts for training the YOLOv8 model and converting data formats.
